@@ -1,0 +1,65 @@
+/* Reusing page-hero styles from MauNhaPage in index.css if possible, or declare here */
+
+.materials-grid {
+  align-items: stretch;
+}
+
+/* Comparison Table */
+.table-responsive {
+  overflow-x: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  background: var(--color-white);
+  border: 1px solid var(--color-border-light);
+}
+
+.vatlieu-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  min-width: 800px; /* Ensure table doesn't squish too much on mobile */
+}
+
+.vatlieu-table th,
+.vatlieu-table td {
+  padding: var(--space-4) var(--space-6);
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.vatlieu-table th {
+  background: var(--color-navy-50);
+  color: var(--color-navy);
+  font-weight: 700;
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.vatlieu-table tr:last-child td {
+  border-bottom: none;
+}
+
+.vatlieu-table td {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.table-row-title {
+  font-weight: 600;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .materials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .materials-grid {
+    grid-template-columns: 1fr;
+  }
+}

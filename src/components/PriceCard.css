@@ -1,0 +1,64 @@
+.price-card {
+  position: relative;
+}
+
+.price-card--popular {
+  border-color: var(--color-navy);
+  box-shadow: var(--shadow-lg);
+}
+
+.price-card__badge {
+  position: absolute;
+  top: var(--space-4);
+  right: var(--space-4);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-1) var(--space-3);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  color: var(--color-white);
+  background: var(--color-navy);
+  border-radius: var(--radius-pill);
+}
+
+.price-card__price {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-1);
+  margin: var(--space-6) 0;
+}
+
+.price-card__amount {
+  font-size: var(--font-size-3xl);
+  font-weight: 800;
+  color: var(--color-navy);
+  line-height: 1;
+}
+
+.price-card__unit {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.price-card__features {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-bottom: var(--space-8);
+}
+
+.price-card__feature {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.price-card__check {
+  color: var(--color-success);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
