@@ -1,0 +1,9 @@
+.project-card__image-wrap {
+  position: relative;
+}
+
+.project-card__location {
+  position: absolute;
+  bottom: var(--space-3);
+  left: var(--space-3);
+}
